@@ -8,4 +8,4 @@ http://www.youtube.com/watch?v=2puhIong-cs
 
 ![Encoder Knobs Demo](http://www.pjrc.com/teensy/td_libs_Encoder_1.jpg)
 
-This slightly modified version adds support for the ESP8266 and ESP32.
+This slightly modified version adds support for the ESP8266.
