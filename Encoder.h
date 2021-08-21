@@ -75,15 +75,16 @@
 // The assembly code uses auto-incrementing addressing modes, so the struct
 // must remain in exactly this order.
 typedef struct {
-  uint8_t                mode;
-  uint8_t                trigger;
-  volatile int8_t *      dir;
   volatile IO_REG_TYPE * pin1_register;
   volatile IO_REG_TYPE * pin2_register;
   IO_REG_TYPE            pin1_bitmask;
   IO_REG_TYPE            pin2_bitmask;
   volatile uint8_t       state;
   volatile int32_t       position;
+  // additional data for other (CW/CCW, PULSE/DIR, PULSE ONLY) encoder types and trigger modes
+  uint8_t                mode;
+  uint8_t                trigger;
+  volatile int8_t *      dir;
 } Encoder_internal_state_t;
 
 class Encoder {
