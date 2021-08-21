@@ -1,4 +1,5 @@
 /* Encoder Library - TwoKnobs Example
+ * https://github.com/hjd1964/Encoder
  * http://www.pjrc.com/teensy/td_libs_Encoder.html
  *
  * This example code is in the public domain.

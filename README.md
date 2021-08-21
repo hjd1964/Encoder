@@ -1,6 +1,12 @@
 # Encoder Library
 
-Encoder counts pulses from quadrature encoded signals, which are commonly available from rotary knobs, motor or shaft sensors and other position sensors. 
+Counts pulses from encoders; which are commonly available from rotary knobs, motor or shaft sensors and other position sensors.
+
+Supports:
+Quadrature (AB) encoders
+CW/CCW encoders
+PULSE/DIR encoders
+PULSE ONLY encoders (for DC motors where direction is known, for example)
 
 http://www.pjrc.com/teensy/td_libs_Encoder.html
 
@@ -8,4 +14,3 @@ http://www.youtube.com/watch?v=2puhIong-cs
 
 ![Encoder Knobs Demo](http://www.pjrc.com/teensy/td_libs_Encoder_1.jpg)
 
-This slightly modified version adds support for the ESP8266.

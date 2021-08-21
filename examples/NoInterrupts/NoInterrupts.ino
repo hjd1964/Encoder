@@ -1,13 +1,12 @@
 /* Encoder Library - NoInterrupts Example
+ * https://github.com/hjd1964/Encoder
  * http://www.pjrc.com/teensy/td_libs_Encoder.html
  *
  * This example code is in the public domain.
  */
 
 // If you define ENCODER_DO_NOT_USE_INTERRUPTS *before* including
-// Encoder, the library will never use interrupts.  This is mainly
-// useful to reduce the size of the library when you are using it
-// with pins that do not support interrupts.  Without interrupts,
+// Encoder, the library will never use interrupts.  Without interrupts,
 // your program must call the read() function rapidly, or risk
 // missing changes in position.
 #define ENCODER_DO_NOT_USE_INTERRUPTS
