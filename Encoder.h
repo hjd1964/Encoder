@@ -362,6 +362,7 @@ public:
           return;
         }
       #endif
+      return;
     }
 
     #ifdef ENCODER_USE_INTERRUPTS
@@ -369,13 +370,16 @@ public:
         uint8_t p1val = DIRECT_PIN_READ(arg->pin1_register, arg->pin1_bitmask);
         if (p1val != arg->state) arg->position++; else arg->position--;
         arg->state = p1val;
+        return;
       }
       if (arg->mode == PULSE_DIR) {
         uint8_t p2val = DIRECT_PIN_READ(arg->pin2_register, arg->pin2_bitmask);
         if (p2val) arg->position--; else arg->position++;
+        return;
       }
       if (arg->mode == PULSE_ONLY) {
         arg->position += *arg->dir;
+        return;
       }
     #else
       if (arg->mode == CW_CCW) { 
